@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html2jade</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="description" content="Easily convert your HTML to Jade">
+    <meta name="author" content="Michael Schwartz">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://pug.qzkyl.ml/lib/he.js"></script>
+    <script src="https://pug.qzkyl.ml/lib/html2jade.js"></script>
+    <script src="https://pug.qzkyl.ml/lib/jade.js"></script>
+    <script src="https://pug.qzkyl.ml/libraries/jquery/jquery.js"></script>
+    <script src="https://pug.qzkyl.ml/libraries/jszip/jszip.min.js"></script>
+    <script src="https://pug.qzkyl.ml/libraries/jszip/jszip-utils.js"></script>
+    <script src="https://pug.qzkyl.ml/libraries/jszip/FileSaver.js"></script>
+    <script src="https://pug.qzkyl.ml/libraries/jszip/Blob.js"></script>
+    <script src="https://pug.qzkyl.ml/libraries/alertifyjs/alertify.min.js"></script>
+  </head>
+</html>
+<body>
+  <header class="grid">
+    <div class="grid__col--12">
+      <h1 class="headline-primary--grouped">html2jade</h1>
+      <h2 class="headline-secondary--grouped">在下面粘贴您的HTML代码以将其转换为Jade</h2>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="grid__col--6">
+      <textarea data-action="input" placeholder="在这里粘贴 HTML ..." rows="7" class="form__input"></textarea>
+    </div>
+    <div class="grid__col--6">
+      <textarea data-action="output" placeholder="转换的代码在这..." rows="7" class="form__input"></textarea>
+    </div>
+    <div class="grid__col--12 mtop">
+      <button data-action="convert" class="btn--default" type="submit">转换</button>
+      <button data-action="download" class="btn--default">下载</button>
+      <button data-action="clear" class="btn--default">清除</button>
+    </div>
+  </div>
+  <footer>@ <a href="https://qzkyl.ml/" target="_blank">转载为骑猪看月亮</a>.</footer>
+  <script src="script.js"></script>
+</body>
